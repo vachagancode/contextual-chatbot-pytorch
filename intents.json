@@ -1,0 +1,61 @@
+{
+	"intents": [
+	  {"tag": "greeting",
+	   "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Hey", "Hi there", "Greetings", "What's up?", "Good morning", "Good evening"],
+	   "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?", "Hey! How can I assist you today?", "Greetings! What can I do for you?"],
+	   "context_set": ""
+	  },
+	  {"tag": "goodbye",
+	   "patterns": ["Bye", "See you later", "Goodbye", "Catch you later", "Take care", "See you soon", "Farewell", "Bye for now", "Later"],
+	   "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.", "Take care and see you again!", "Farewell! Hope to see you soon."],
+	   "context_set": ""
+	  },
+	  {"tag": "thanks",
+	   "patterns": ["Thanks", "Thank you", "That's helpful", "I appreciate it", "Much obliged", "Thanks a lot", "Many thanks", "Thank you so much", "Thanks for your help"],
+	   "responses": ["Happy to help!", "Any time!", "My pleasure", "You're welcome!", "Glad I could assist!", "No problem!", "Always here to help."]
+	  },
+	  {"tag": "hours",
+	   "patterns": ["What hours are you open?", "What are your hours?", "When are you open?", "Opening hours", "Closing hours", "What time do you open?", "What time do you close?", "Business hours", "Operating hours"],
+	   "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day", "We operate daily from 9am to 9pm", "You can visit us any day between 9am and 9pm"]
+	  },
+	  {"tag": "mopeds",
+	   "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?", "Tell me about your mopeds", "Do you rent scooters?", "What brands do you carry?", "What mopeds are available?", "Available mopeds"],
+	   "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds", "Our collection includes Yamaha, Piaggio, and Vespa mopeds", "We carry high-quality mopeds like Vespa, Piaggio, and Yamaha"]
+	  },
+	  {"tag": "payments",
+	   "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?", "Can I pay with a card?", "What payment methods do you accept?", "Do you accept debit cards?", "Can I use my credit card?", "Payment options", "Do you take AMEX?"],
+	   "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards", "You can pay with VISA, Mastercard, or AMEX", "We accept all major cards including AMEX"]
+	  },
+	  {"tag": "opentoday",
+	   "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?", "Today's hours", "Is the shop open today?", "Are you operating today?", "Can I visit you today?"],
+	   "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day", "Yes, we're open today from 9am to 9pm", "You can visit us today between 9am and 9pm"]
+	  },
+	  {"tag": "rental",
+	   "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?", "How do I rent?", "What is the process for renting?", "I want to rent a scooter", "Tell me how to rent a moped", "Rental details", "How to rent?"],
+	   "responses": ["Are you looking to rent today or later this week?", "We offer rentals on a daily or weekly basis. What works for you?", "Let me guide you through our rental process!"],
+	   "context_set": "rentalday"
+	  },
+	  {"tag": "today",
+	   "patterns": ["today", "rent a moped today", "same-day rental", "Can I rent today?", "Immediate rental", "Need a moped today", "Rent now", "Today rental options"],
+	   "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED", "Contact 1-800-MYMOPED for immediate rentals", "Give us a call at 1-800-MYMOPED for today’s rentals"],
+	   "context_filter": "rentalday"
+	  },
+	  {"tag": "location",
+	   "patterns": ["Where are you located?", "What is your address?", "Location of your shop?", "Shop address", "Where can I find you?", "Directions to your place?", "How do I get to your shop?"],
+	   "responses": ["We're located at 123 Main Street, Downtown", "You can find us at 123 Main Street, near the central park", "Visit us at 123 Main Street, in the heart of the city"]
+	  },
+	  {"tag": "contact",
+	   "patterns": ["How can I contact you?", "What is your phone number?", "Contact details", "Phone number", "How to reach you?", "Customer support contact?", "Support line?"],
+	   "responses": ["You can reach us at 1-800-MYMOPED", "Call us anytime at 1-800-MYMOPED", "Our contact number is 1-800-MYMOPED"]
+	  },
+	  {"tag": "insurance",
+	   "patterns": ["Do you offer insurance?", "Is insurance included?", "Rental insurance?", "Do I need insurance to rent?", "Insurance options?", "Is there an insurance policy?", "What about insurance?"],
+	   "responses": ["Yes, we offer insurance options for all rentals", "Insurance is included in our rental packages", "You can opt for additional insurance coverage if needed"]
+	  },
+	  {"tag": "reservations",
+	   "patterns": ["Can I make a reservation?", "How do I reserve a moped?", "Reservation options", "Reserve a moped", "Can I book in advance?", "How to book a moped?", "Booking details?"],
+	   "responses": ["You can reserve a moped by calling 1-800-MYMOPED", "Reservations are accepted via phone or our website", "Feel free to book your moped in advance by contacting us"]
+	  }
+	]
+  }
+  
